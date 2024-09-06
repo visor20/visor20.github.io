@@ -20,18 +20,27 @@ body
 
 #intro
 {
+    text-align: center;
     color: var(--my_green);
     background-color: var(--my_black);
     margin: 1%;
-    padding: 1%;
+    padding: 2%;
 }
 
- #nav, #footer, #copyright
+#footer, #copyright
 {
     color: var(--my_white);
     background-color: var(--my_black);
     margin: 1%;
-    padding: 1%;
+    padding: 2%;
+}
+
+#nav
+{
+    color: var(--my_white);
+    background-color: var(--my_black);
+    margin: 1%;
+    padding: 2%;
 }
 
 .main 
@@ -64,13 +73,13 @@ body
 #nav li
 {
     display: inline;
-    padding: 0.5em;
 }
 
 #nav a:link, #nav a:visited
 {
     color: inherit;
     text-decoration: none;
+    padding: 1%;
 }
 
 #footer a:link, #footer a:visited
