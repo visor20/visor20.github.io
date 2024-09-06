@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* colors */
+:root 
+{
+    --my_black: #0B0014;
+    --my_gray: #8D97A5;
+    --my_blue: #B2CEDE;
+    --my_green: #04F17A;
+    --my_white: #F5F3F5;
+}
+
+body 
+{
+    width: 90%;
+    font-family: 'Roboto Mono', sans-serif;
+    margin: 0 auto;
+    background-color: var(--my_gray);
+}
+
+#intro
+{
+    color: var(--my_green);
+    background-color: var(--my_black);
+    margin: 1%;
+    padding: 1%;
+}
+
+ #nav, #footer, #copyright
+{
+    color: var(--my_white);
+    background-color: var(--my_black);
+    margin: 1%;
+    padding: 1%;
+}
+
+.main 
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column1, .column2, .column3, .about_picture
+{
+    flex: 1;
+    box-sizing: border-box;
+    color: var(--my_white);
+    background-color: var(--my_black);
+    padding: 1%;
+    margin: 1%;
+}
+
+.about_text
+{
+    flex: 2;
+    box-sizing: border-box;
+    color: var(--my_white);
+    background-color: var(--my_black);
+    padding: 1%;
+    margin: 1%;
+}
+
+#nav li
+{
+    display: inline;
+    padding: 0.5em;
+}
+
+#nav a:link, #nav a:visited
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+#footer a:link, #footer a:visited
+{
+    color: inherit;
+}
+
+.about_picture img
+{
+    display: block;
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
