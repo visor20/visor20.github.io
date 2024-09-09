@@ -22,13 +22,22 @@ body
 
 #intro
 {
+    min-height: 25vh;
+    width: auto;
     text-align: center;
     color: var(--my_green);
     background-color: var(--my_black);
     margin: 0;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding: 0;
+}
+
+#intro h1
+{
     padding-top: 4%;
+}
+
+#typing-text
+{
     padding-bottom: 8%;
 }
 
@@ -43,7 +52,7 @@ body
     padding-left: 4%;
     padding-right: 4%;
     padding-top: 4%;
-    padding-bottom: 7%;
+    padding-bottom: 8%;
 }
 
 
@@ -83,16 +92,32 @@ body
 
 .main 
 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    padding: 0;
+}
+
+.main2
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0;
+    padding: 0;
+}
+
+/* for small screens */
+@media (max-width: 768px) 
+{
+    .main, .main2
+    {
+        grid-template-columns: 1fr;
+    }
 }
 
 .column1, .column2, .column3, .about_picture
 {
-    flex: 1;
     text-align: center;
-    box-sizing: border-box;
     color: var(--my_black);
     background-color: var(--my_white);
     margin: 0;
@@ -112,8 +137,6 @@ body
 
 .about_text
 {
-    flex: 2;
-    box-sizing: border-box;
     color: var(--my_black);
     background-color: var(--my_white);
     margin: 0;
