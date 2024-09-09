@@ -95,16 +95,19 @@ $(document).ready(function()
 		}
 	);
 
-	$('.column1, .column2, .column3').mouseenter(
-		function()
-		{
-			$(this).css('background-color', css_off_white);
-		}).mouseleave(
-		function()
-		{
-			$(this).css('background-color', css_white);
-		}
-	);
+	if (!('ontouchstart' in document.documentElement))
+	{
+		$('.column1, .column2, .column3').mouseenter(
+			function()
+			{
+				$(this).css('background-color', css_off_white);
+			}).mouseleave(
+			function()
+			{
+				$(this).css('background-color', css_white);
+			}
+		);
+	}
 
 	$(".column1, .column2, .column3").click(function()
 	{
