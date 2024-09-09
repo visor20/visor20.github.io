@@ -37,7 +37,7 @@ $(document).ready(function()
 	var index = 0;
 	var path = window.location.pathname;
 	var page = path.split('/').pop();
-	if (page == 'index.html')
+	if (page == 'index.html' || page == undefined)
 	{
 		type_text(text_arr[0], index);
 	}
