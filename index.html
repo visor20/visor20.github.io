@@ -11,46 +11,70 @@
     <!-- Intro -->
     <div id="intro">
         <h1>Richard Viso</h1>
-        <p>Welcome to my portfolio.</p>
+        <div id="typing-text"></div>
     </div>
 
     <!-- Nav -->
     <div id="nav">
-        <ul class="links">
-            <li><a href="index.html">Projects</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="Richard_Viso_Resume.pdf" target ="_blank">Resume</a></li>
-        </ul>
+        <a href="index.html">Projects</a>
+        <a href="about.html">About Me</a>
+        <a href="Richard_Viso_Resume.pdf" target ="_blank">Resume</a>
     </div>
 
     <!-- Main -->
     <div class="main">
 
-        <div class="column1">
-            <p>1</p>
+        <div class="column1" data-url="https://github.com/visor20/trading_mk1">
+            <h3>Python Momentum Trading</h3>
+            <img src="images/plot_2024-09-06.png" alt="plot">
+            <p>
+            To educate myself on the basics of quantitative trading,
+            I implemented a basic momentum trading strategy in Python.
+            </p>
         </div>
 
-        <div class="column2">
-            <p>2</p>
+        <div class="column2" data-url="https://github.com/visor20/Feedback">
+            <h3>Feedback: C++ Audio Plugin</h3>
+            <img src="images/finalGUI.jpg" alt="juce GUI">
+            <p> 
+            In college, I wanted to learn how to make VST3 plugins for
+            music production. For this project,
+            I used the JUCE C++ framework to make a plugin
+            for guitar playing. The plugin tracks the signal's 
+            pitch and synthesizes a tone to mimic the feedback of
+            a traditional electric guitar through an live amp.
+            </p>
         </div>
 
-        <div class="column3">
-            <p>3</p>
+        <div class="column3" data-url="bootstrap.html">
+            <h3>Bootstrap: Wearable FX</h3>
+            <img src="images/bootstrap.jpg" alt="boots">
+            <p>
+            Guitar effects are usually controlled by pedals.
+            These analog devices are typically designed in a binary 
+            fashion (either on or off). I wanted
+            to make an instrument controller that felt more
+            expressive and natural. I 3D printed straps and used
+            a microcontroller to make my final device.
+            </p>
         </div>
 
     </div>
 
     <!-- Footer -->
     <footer id="footer">
-        <h3>Email</h3>
-        <p><a href="#">richardnviso@gmail.com</a></p>
+        <h3>Contact Me</h3>
+        <div id="footer-nav">
+            <a href="">richardnviso@gmail.com</a>
+            <a href="https://www.linkedin.com/in/richard-viso-184401248" target="_blank">Visit my LinkedIn</a>
+        </div>
     </footer>
 
     <!-- Copyright -->
     <div id="copyright">
         <p>© 2024 Richard Viso. All Rights Reserved.</p>
     </div>
-
+    
     <!-- Scripts -->
     <script src="assets/js/app.js"></script>
 </body>
