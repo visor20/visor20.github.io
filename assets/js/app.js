@@ -35,17 +35,11 @@ $(document).ready(function()
 	$("#intro h1").hide().fadeIn(750);
 
 	var index = 0;
-	var start_up = false;
 	var path = window.location.pathname;
 	var page = path.split('/').pop();
-	if (page === '' || page === '/' || page == undefined)
+	if (page === 'index.html' || page === '' || page === '/' || page == undefined)
 	{
 		type_text(text_arr[0], index);
-		start_up == true;
-	}
-	else if (page === 'index.html')
-	{
-		type_text(text_arr[0], index)
 	}
 	else if (page == 'about.html')
 	{
@@ -59,11 +53,12 @@ $(document).ready(function()
 	// current nav panel should be white
 	$('#nav a').each(function()
 	{
-		if (this.href === window.location.href || start_up) 
+		var navLinks = document.querySelectorAll('#nav a');
+		var cur_url = window.location.href;
+		if (this.href === cur_url || (cur_url.endsWith('/') && this.href.endsWith('index.html'))) 
 		{
 			$(this).css('background-color', css_white);
 			$(this).css('color', css_black);
-			start_up = false;
 		}
 	});
 
