@@ -37,7 +37,7 @@ $(document).ready(function()
 	var index = 0;
 	var path = window.location.pathname;
 	var page = path.split('/').pop();
-	if (page == 'index.html' || page == undefined)
+	if (page === 'index.html' || page === '' || page === '/' || page == undefined)
 	{
 		type_text(text_arr[0], index);
 	}
@@ -93,11 +93,11 @@ $(document).ready(function()
 		}
 	);
 
-	$('.column1, .column2, .column3').hover(
+	$('.column1, .column2, .column3').mouseenter(
 		function()
 		{
 			$(this).css('background-color', css_off_white);
-		},
+		}).mouseleave(
 		function()
 		{
 			$(this).css('background-color', css_white);
