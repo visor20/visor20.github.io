@@ -147,9 +147,10 @@ body
     justify-content: left; 
 }
 
-#footer-nav a
+#footer-nav li
 {
     margin-right: 6%;
+    list-style-type: none; 
 }
 
 #footer-nav a:link, #footer a:visited
@@ -211,11 +212,12 @@ body
     {
         display: block;
     }
-    #footer-nav a
+    #footer-nav li
     {
         display: list-item;
         list-style-type: circle;
-        margin-left: 4%;
+        padding-top: 0.5em;
+        margin-left: 0em;
     }
     .main, .main2
     {
