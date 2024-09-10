@@ -28,25 +28,31 @@
             <h3>Bootstrap: Wearable FX</h3>
             <img src="images/boots1.JPEG" alt="boots">
             <p>
-            Guitar effects are usually controlled by pedals.
-            These analog devices are typically designed in a binary 
-            fashion (either on or off). I wanted
-            to make an instrument controller that felt more
-            expressive and natural. I 3D printed straps and used
-            a microcontroller to make my final device.
+                Guitar pedals often lack dynamic settings since they are typically operated with on/off switches or
+                occasionally with a foot pedal. 
+                Motivated by this, I decided to create an alternative - one that could leverage the user's physical
+                movements to afford natural and dynamic musical expression.
+                I began by using <b>AutoCAD</b>
+                to design and <b>3D print</b> the physical components.
+                Then, I used analog sensors to pick up foot gestures, and finally, I developed a 
+                <b>C</b> program to handle these analog signals and generate 
+                <b>MIDI</b> data to transform my guitar's signal. The end result was a wearable, programmable 
+                music controller that straps to the user's shoes or boots.
             </p>
         </div>
 
         <div class="column2" data-url="https://github.com/visor20/Feedback">
             <h3>Feedback: C++ Audio Plugin</h3>
             <img src="images/finalGUI.jpg" alt="juce GUI">
-            <p> 
-            In college, I wanted to learn how to make VST3 plugins for
-            music production. For this project,
-            I used the JUCE C++ framework to make a plugin
-            for guitar playing. The plugin tracks the signal's 
-            pitch and synthesizes a tone to mimic the feedback of
-            a traditional electric guitar through an live amp.
+            <p>
+                For this project, I used the <b>JUCE C++</b> framework to develop a VST3 plugin for guitar playing.
+                At Stanford, I took numerous signal processing and recording classes at
+                CCRMA (the Center for Computer Research in Music and Acoustics). 
+                These classes motivated me to make my own technologies for recording and producing music. 
+                The plugin tracks the signal's pitch and synthesizes a tone to mimic the feedback of a traditional 
+                electric guitar going through an amplifier. 
+                This project served as a great introduction to <b>UI design</b> as well as the basics of 
+                building a project and practicing version control with <b>Git</b> and <b>Git repositories.</b> 
             </p>
         </div>
 
@@ -54,8 +60,15 @@
             <h3>Python Momentum Trading</h3>
             <img src="images/plot_2024-09-06.png" alt="plot">
             <p>
-            To educate myself on the basics of quantitative trading,
-            I implemented a basic momentum trading strategy in Python.
+                For this project, I designed and implemented a momentum trading strategy in <b>Python.</b> 
+                I should note that I based my strategy on one discussed in a research paper 
+                (the citation can be found in the readme.txt file).
+                This project involved gathering financial data using yFinance,
+                calculating indicators like volume-weighted averages and volatility, and generating buy or short-sell
+                signals based on these indicators. In general, it served as a great opportunity
+                to learn about <b>data science, algorithmic trading, and financial markets.</b>
+                Furthermore, the experience gave me a solid understanding of how to 
+                implement and backtest a trading strategy using Python.
             </p>
         </div>
 
