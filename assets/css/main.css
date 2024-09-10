@@ -184,21 +184,21 @@ body
 {
     width: 85%;
     height: auto;
-    margin-bottom: 4%;
+    margin-bottom: 0.5em;
 }
 
 .column2 img
 {
     width: 90%;
     height: auto;
-    margin-bottom: 12%;
+    margin-bottom: 1em;
 }
 
 .column3 img
 {
     width: 90%;
     height: auto;
-    margin-bottom: 10%;
+    margin-bottom: 0.8em;
 }
 
 /* for small screens */
