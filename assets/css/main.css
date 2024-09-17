@@ -122,6 +122,13 @@ body
     padding: 8%;
 }
 
+.boot_video video
+{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 .column1, .column2, .column3
 {
     text-align: center;
